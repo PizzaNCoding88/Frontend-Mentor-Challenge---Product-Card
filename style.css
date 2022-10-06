@@ -17,6 +17,8 @@ body{
     border-radius: 8px;
 }
 
+
+
 .title{
     font-family: Montserrat;
     font-weight: lighter;
@@ -108,10 +110,71 @@ h3{
 
 @media(min-width: 500px){
     #img-desktop{
+        width: 50%;
         display: inline-block;
         border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
+        border-bottom-left-radius: 8px;
     }
     #img-mobile{display:none;
+    }
+
+    body{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        height: 92%;
+    }
+
+    .right-side{
+        background-color: white;
+        margin-left: 50px;
+        width: 50%;
+    }
+    
+    .container{
+        width: 100%;
+    }
+
+    .right-side{
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    main{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title{
+        margin-top: 35px;
+        margin-bottom: 15px;
+        margin-left: -10px;
+        
+    }
+
+    h1{
+        font-size: 35px;
+        margin-left: -10px
+    }
+
+    h3{
+        margin-left: -10px;
+    }
+
+    .price{
+        margin-left: -10px;
+    }
+
+    .cart-btn{
+        margin-left:-10px
+    }
+
     }
 }
